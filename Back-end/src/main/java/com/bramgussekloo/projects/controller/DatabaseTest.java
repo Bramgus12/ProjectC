@@ -17,6 +17,7 @@ public class DatabaseTest {
     @GetMapping("/test")
     private Address testDatabase(){
         ArrayList<Address> list = Statements.getAllAddresses();
+
         Address address = list.get(0);
         return address;
     }
